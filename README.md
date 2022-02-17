@@ -55,59 +55,59 @@ DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP.
 * sudo nano /etc/php/7.3/apache2/php.ini   (7.4)
  
 ******************************************
-DATOS A MEDIFICAR OPCIONALES:
-memory_limit 256M
-upload_max_filesize 16M
-post_max_size 16M
-max_execution_time 300
-max_input_time 300
-max_input_vars 10000
+* DATOS A MEDIFICAR OPCIONALES:
+* memory_limit 256M
+* upload_max_filesize 16M
+* post_max_size 16M
+* max_execution_time 300
+* max_input_time 300
+* max_input_vars 10000
 
-DATOS A MODIFICAR OBLIGATORIO:
-date.timezone="America/Merida"
+* DATOS A MODIFICAR OBLIGATORIO:
+* date.timezone="America/Merida"
 *******************************************
 
-SE RECOMIENDA REINICIAR EL SERVICIO DE PHP
+* SE RECOMIENDA REINICIAR EL SERVICIO DE PHP
 * sudo systemctl restart apache2
 
 
 # 7 ACTUALIZAMOS POR RECOMENDACION
- sudo apt update
+* sudo apt update
 
 
 # 8 CONFIGURAMOS SERVIDOR ZABBIX, EL ARCHIVO DE CONFIGURACION SE ENCUENTRA EN /ETC/ZABBIX/ZABBIX_SERVER.CONF
- sudo nano /etc/zabbix/zabbix_server.conf
+* sudo nano /etc/zabbix/zabbix_server.conf
  
 *********************************************************************************************
-LOS DATOS A CAMBIAR SON LOS SIGUIENTES, DE ACUIERDO A LA BASE DE DATOS Y USUARIO CREADOS:
-DBHost=localhost
-DBName=zabbix_db
-DBUser=zabbix
-DBPassword=zabbix
+* LOS DATOS A CAMBIAR SON LOS SIGUIENTES, DE ACUIERDO A LA BASE DE DATOS Y USUARIO CREADOS:
+* DBHost=localhost
+* DBName=zabbix_db
+* DBUser=zabbix
+* DBPassword=zabbix
 *********************************************************************************************
 
 
 # 9 CARGAMOS EL ESQUEMA PREDETERMINADO DE LA BASE DE DATOS DE ZABBIX
-zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
+* zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
 
 
 # 10 INICIE LOS PROCESOS DE SERVIDOR Y AGENTE DE ZABBIX, INICIE LOS PROCESOS  DEL SERVIDOR  Y AGENTE ZABBIX.
- sudo systemctl restart zabbix-server zabbix-agent apache2
- sudo systemctl enable zabbix-server
- sudo systemctl status zabbix-server
+* sudo systemctl restart zabbix-server zabbix-agent apache2
+* sudo systemctl enable zabbix-server
+* sudo systemctl status zabbix-server
 
 Ctrl+c para terminar proceso
 
 
 # 11 REINICIE EL SERVICIO DE APACHE2 Y VERIFIQUE EL ESTATUS
- sudo systemctl restart apache2
- sudo systemctl status apache2
+* sudo systemctl restart apache2
+* sudo systemctl status apache2
 
 Ctrl+c para terminar proceso
 
 
 # 12 PARA SABER LA DIRECCIÓN DEL EQUIPO ESCRIBA
-IFCONFIG
+* IFCONFIG
 
-DIRIGETE A LA SIGUIENTE RUTA PARA CONTINUAR CON LA INSTALACION DEL SERVIDOR ZABBIX.
+#### DIRIGETE A LA SIGUIENTE RUTA PARA CONTINUAR CON LA INSTALACION DEL SERVIDOR ZABBIX.
 http: // servidor-ip / zabbix
