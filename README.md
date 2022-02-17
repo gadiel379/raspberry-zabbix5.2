@@ -98,7 +98,7 @@ DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP. (7.3) O (7.4)
 
 
 # 9 CARGAMOS EL ESQUEMA PREDETERMINADO DE LA BASE DE DATOS DE ZABBIX
-* zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
+* zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix_db
 
 
 # 10 INICIE LOS PROCESOS DE SERVIDOR Y AGENTE DE ZABBIX, INICIE LOS PROCESOS  DEL SERVIDOR  Y AGENTE ZABBIX.
