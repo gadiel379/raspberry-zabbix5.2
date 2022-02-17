@@ -1,12 +1,12 @@
 ###### Descargar el repositorio oficial de Zabbix de la siguiente ruta: https://github.com/gadiel379/raspberry-zabbix5.2/blob/main/zabbix-release_5.2-1%2Bdebian10_all.deb
  
  # PARA LA CONFIGURACION ES NECESARIO INSTALAR NANO
-  sudo apt install nano
- 
+  * sudo apt install nano
+ '''
   comandos basicos
   Ctrl+w buscar
   Ctrl+x salir
-  
+  '''
  
 # 1 INSTALAR REPOSITORIO DE Zabbix
   wget https://github.com/gadiel379/raspberry-zabbix5.2/blob/main/zabbix-release_5.2-1%2Bdebian10_all.deb
