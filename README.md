@@ -9,8 +9,8 @@ Descargar el repositorio oficial de Zabbix de la siguiente ruta: https://github.
   
  
 # 1 INSTALAR REPOSITORIO DE Zabbix
-   wget https://github.com/gadiel379/raspberry-zabbix5.2/blob/main/zabbix-release_5.2-1%2Bdebian10_all.deb
-   dpkg -i zabbix-release_5.2-1+debian10_all.deb
+  wget https://github.com/gadiel379/raspberry-zabbix5.2/blob/main/zabbix-release_5.2-1%2Bdebian10_all.deb
+  dpkg -i zabbix-release_5.2-1+debian10_all.deb
   sudo apt update
  
  
