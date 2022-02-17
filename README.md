@@ -63,8 +63,12 @@ DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP. (7.3) O (7.4)
 * max_input_time 300
 * max_input_vars 10000
 
-* DATOS A MODIFICAR OBLIGATORIO:
+* DATOS A MODIFICAR OBLIGATORIO, DESCOMENTAR:
 * date.timezone="America/Merida"
+
+* comandos basicos
+Ctrl+w buscar
+Ctrl+x salir
 *******************************************
 
 * SE RECOMIENDA REINICIAR EL SERVICIO DE PHP
