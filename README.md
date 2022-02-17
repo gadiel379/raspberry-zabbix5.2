@@ -66,9 +66,9 @@ DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP. (7.3) O (7.4)
 * DATOS A MODIFICAR OBLIGATORIO, DESCOMENTAR:
 * date.timezone="America/Merida"
 
-* comandos basicos
-Ctrl+w buscar
-Ctrl+x salir
+* comandos basicos de nano
+*Ctrl+w buscar
+*Ctrl+x salir
 *******************************************
 
 * SE RECOMIENDA REINICIAR EL SERVICIO DE PHP
@@ -88,6 +88,10 @@ Ctrl+x salir
 * DBName=zabbix_db
 * DBUser=zabbix
 * DBPassword=zabbix
+
+* comandos basicos de nano
+*Ctrl+w buscar
+*Ctrl+x salir
 *********************************************************************************************
 
 
