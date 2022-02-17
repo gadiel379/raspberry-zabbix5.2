@@ -2,28 +2,28 @@
  
  # PARA LA CONFIGURACION ES NECESARIO INSTALAR NANO
   * sudo apt install nano
- '''
-  comandos basicos
-  Ctrl+w buscar
-  Ctrl+x salir
-  '''
+ 
+>  comandos basicos
+> Ctrl+w buscar
+> Ctrl+x salir
+  
  
 # 1 INSTALAR REPOSITORIO DE Zabbix
-  wget https://github.com/gadiel379/raspberry-zabbix5.2/blob/main/zabbix-release_5.2-1%2Bdebian10_all.deb
-  dpkg -i zabbix-release_5.2-1+debian10_all.deb
-  sudo apt update
+*wget https://github.com/gadiel379/raspberry-zabbix5.2/blob/main/zabbix-release_5.2-1%2Bdebian10_all.deb
+*dpkg -i zabbix-release_5.2-1+debian10_all.deb
+*sudo apt update
  
  
 # 2 INSTALE SERVIDOR ZABBIX, FRONTED, AGENTE
- sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent
+*sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent
 
 
 # 3 INSTALE EL SERVIDOR DE BASE DE DATOS MARIADB
- sudo apt install mariadb-server
- sudo mysql_secure_installation
+*sudo apt install mariadb-server
+*sudo mysql_secure_installation
 
-  Le pedira actualaizar la contraseña de root pulse Y escriba la nueva contraseña
-  En los pasos siguientes solo ponga: Y
+#### Le pedira actualaizar la contraseña de root pulse Y escriba la nueva contraseña
+#### En los pasos siguientes solo ponga: Y
   
   
 # 4 CREE EL USUARIO Y LA BASE DE DATOS DE ZABBIX
