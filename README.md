@@ -14,11 +14,11 @@
 * sudo apt update
  
  
-# 2 INSTALE SERVIDOR ZABBIX, FRONTED, AGENTE
+# 2 INSTALAR SERVIDOR ZABBIX, FRONTED, AGENTE
 * sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent
 
 
-# 3 INSTALE EL SERVIDOR DE BASE DE DATOS MARIADB
+# 3 INSTALAR EL SERVIDOR DE BASE DE DATOS MARIADB
 * sudo apt install mariadb-server
 * sudo mysql_secure_installation
 
@@ -39,7 +39,7 @@ AL USUARIO DE LA SIGUIENTE MANERA:
 * quit;
 
 
-# 5 INTALA Y CONFIGURA APACHE
+# 5 INSTALAR Y CONFIGURA APACHE
  * sudo apt update
  * sudo apt install  apache2 
  * sudo systemctl start apache2
@@ -47,12 +47,12 @@ AL USUARIO DE LA SIGUIENTE MANERA:
 
 
 # 6 VERIFICA LA VERSION INSTALADA DE PHP
- * php -v
+ * php -v  
 
 DIRIJASE AL DIRECTORIO DE CONFIGURACIÓN DE PHP Y EDITE EL /etc/php/7.4/apache2/php.ini 
-DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP.
+DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP. (7.3) O (7.4)
 
-* sudo nano /etc/php/7.3/apache2/php.ini   (7.4)
+* sudo nano /etc/php/7.3/apache2/php.ini   
  
 ******************************************
 * DATOS A MEDIFICAR OPCIONALES:
