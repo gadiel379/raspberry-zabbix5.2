@@ -67,8 +67,8 @@ DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP. (7.3) O (7.4)
 * date.timezone="America/Merida"
 
 * comandos basicos de nano
-*Ctrl+w buscar
-*Ctrl+x salir
+* Ctrl+x salir
+* pedira guardar los datos, damos enter.
 *******************************************
 
 * SE RECOMIENDA REINICIAR EL SERVICIO DE PHP
@@ -87,11 +87,13 @@ DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP. (7.3) O (7.4)
 * DBHost=localhost
 * DBName=zabbix_db
 * DBUser=zabbix
+
+* DESCOMENTAR PARA AGREGAR LA CONTRASEÑA DE LA BASE DE DATOS:
 * DBPassword=zabbix
 
 * comandos basicos de nano
-*Ctrl+w buscar
-*Ctrl+x salir
+* Ctrl+x salir
+* pedira guardar los datos, damos enter.
 *********************************************************************************************
 
 
