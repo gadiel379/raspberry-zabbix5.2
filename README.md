@@ -27,32 +27,32 @@
   
   
 # 4 CREE EL USUARIO Y LA BASE DE DATOS DE ZABBIX
- sudo mysql -u root -p
+* sudo mysql -u root -p
 
 CREE UN USUARIO Y UNA BASE DE DATOS DE ZABBIX COMO SE MUESTRA Y OTORGUE LOS PRIVILEGIOS
 AL USUARIO DE LA SIGUIENTE MANERA:
 
-; CREATE DATABASE zabbix_db character set utf8 collate utf8_bin;
-; CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'zabbix';
-; GRANT ALL PRIVILEGES ON zabbix_db.* TO 'zabbix'@'localhost' WITH GRANT OPTION;
-; FLUSH PRIVILEGES;
-; quit;
+* CREATE DATABASE zabbix_db character set utf8 collate utf8_bin;
+* CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'zabbix';
+* GRANT ALL PRIVILEGES ON zabbix_db.* TO 'zabbix'@'localhost' WITH GRANT OPTION;
+* FLUSH PRIVILEGES;
+* quit;
 
 
 # 5 INTALA Y CONFIGURA APACHE
- sudo apt update
- sudo apt install  apache2 
- sudo systemctl start apache2
- sudo systemctl enable apache2
+ * sudo apt update
+ * sudo apt install  apache2 
+ * sudo systemctl start apache2
+ * sudo systemctl enable apache2
 
 
 # 6 VERIFICA LA VERSION INSTALADA DE PHP
- php -v
+ * php -v
 
 DIRIJASE AL DIRECTORIO DE CONFIGURACIÓN DE PHP Y EDITE EL /etc/php/7.4/apache2/php.ini 
 DE ACUERDO A LA VERCIÓN ES LA RUTA DE PHP.
 
- sudo nano /etc/php/7.3/apache2/php.ini   (7.4)
+* sudo nano /etc/php/7.3/apache2/php.ini   (7.4)
  
 ******************************************
 DATOS A MEDIFICAR OPCIONALES:
@@ -68,7 +68,7 @@ date.timezone="America/Merida"
 *******************************************
 
 SE RECOMIENDA REINICIAR EL SERVICIO DE PHP
-sudo systemctl restart apache2
+* sudo systemctl restart apache2
 
 
 # 7 ACTUALIZAMOS POR RECOMENDACION
